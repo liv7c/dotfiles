@@ -1,0 +1,27 @@
+{
+  "diagnostic.enable": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "suggest.noselect": false,
+  "eslint.autoFixOnSave": true,
+  "prettier.disableSuccessMessage": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascriptreact",
+    "typescript.tsx",
+    "rust",
+    "graphql"
+  ]
+}
