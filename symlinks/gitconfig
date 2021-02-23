@@ -1,0 +1,42 @@
+[user]
+  name = Olivia Coumans
+  email = livie7c@gmail.com
+  signingkey = FB585ECEFCEF8B8DCB0F008A27A3F02A7F8968A3
+
+[core]
+  editor = nvim
+  autocrlf = input
+  excludesfile = ~/.gitignore
+
+[commit]
+  gpgsign = true
+
+[color]
+  ui = auto
+
+[credential]
+  helper = osxkeychain
+
+[diff]
+  renames = copies
+  tool = vimdiff
+
+[fetch]
+  prune = 1
+
+[push]
+  default = simple
+
+[pull]
+  rebase = merges
+
+[rebase]
+  autosquash = true
+
+[alias]
+  s = status -s
+  st = status
+  l = log --oneline --graph
+  la = !git l --all
+  pf = push --force-with-lease
+  unstage = restore --staged .
