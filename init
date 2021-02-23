@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# to get correct dotfiles directory path
+CURRENTDIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"
+HOMEDIR=/Users/oliviac
+
+# the fun begins...
+echo "Changing to the ${CURRENTDIR} directory"
+cd ${CURRENTDIR}
+
+
+# create symlinks for all files in symlinks directory
+function create_symlinks {
+  for file in "${CURRENTDIR}/symlinks"/*; do
+    local filename
+    filename="$(basename "${file}")"
+
+    echo "Creating a symlink to $filename in home directory"
+     [[ -r ${file} ]] && [[ -e ${file} ]] && rm -f "${HOMEDIR}/.${filename}" && ln -s "${file}" "${HOMEDIR}/.${filename}"
+  done
+
+  # spaceship config
+  ln -sf ${CURRENTDIR}/config/starship.toml ${HOMEDIR}/.config/starship.toml
+}
+
+# create symlink for neovim config
+function sync_vim {
+  for file in `find . -regex ".*\.vim$"`; do
+    mkdir -p ~/.config/nvim/plugin
+    mkdir -p ~/.config/nvim/after/plugin
+    mkdir -p ~/.config/nvim/lua
+
+    echo "Creating a symlink to $file in home directory"
+    ln -sf ${CURRENTDIR}/${file} ${HOMEDIR}/.config/${file}
+  done
+
+  ln -sf ${CURRENTDIR}/nvim/coc-settings.json ${HOMEDIR}/.config/nvim/coc-settings.json
+}
+
+create_symlinks
+sync_vim
+
+unset create_symlinks
+unset sync_vim
