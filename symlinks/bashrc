@@ -1,0 +1,47 @@
+export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
+# add python v3 to path
+export PATH=${PATH}:/Users/oliviac/Library/Python/3.7/bin
+# add cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+source "$HOME/.cargo/env"
+
+source_config_files() {
+  local homedir=/Users/oliviac
+  local dotfilesdir="${homedir}/dotfiles"
+
+  shopt -s nullglob
+  for file in "${dotfilesdir}/sources/"*; do
+    [[ -r ${file} ]] && [[ -f ${file} ]] && source "${file}"
+  done
+  shopt -u nullglob
+}
+
+source_config_files
+unset -f source_config_files
+
+# for signed commit
+export GPG_TTY=$(tty)
+
+# remove warning when first log into shell
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# tell fzf to use extended regex option
+export FZF_DEFAULT_OPTS="--extended"
+
+# make sure fzf respects .gitignore in fuzzy find
+export FZF_DEFAULT_COMMAND="fd --type f"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-ignore-vcs --ignore -g "!{node_modules,.git}" '
+
+# add fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# add spaceship prompt
+eval "$(starship init bash)"
+
+# add git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+

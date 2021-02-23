@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# create a new directory and navigate to it
+mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# to find git commit sha (very useful when using git rebase -i)
+fcs() {
+  local commits commit
+  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
+  commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
+  echo -n $(echo "$commit" | sed "s/ .*//")
+}
+
+gri() {
+	git rebase -i `fcs`
+}
+
+# to switch branch quickly with fzf
+# source: https://revelry.co/resources/development/terminal-workflow-fzf/
+gsb() {
+  result=$(git branch -a --color=always | grep -v '/HEAD\s' | sort |
+    fzf --height 50% --border --ansi --tac --preview-window right:70% \
+      --preview 'git log --oneline --graph --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1) | head -'$LINES |
+    sed 's/^..//' | cut -d' ' -f1)
+
+  if [[ $result != "" ]]; then
+    if [[ $result == remotes/* ]]; then
+      git switch --track $(echo $result | sed 's#remotes/##')
+    else
+      git switch "$result"
+    fi
+  fi
+}
