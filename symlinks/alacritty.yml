@@ -1,0 +1,24 @@
+---
+colors:
+    primary:
+      background: "#000000"
+
+window:
+    startup_mode: Maximized
+
+font:
+    size: 13
+    normal:
+      family: Hasklig
+      style: Regular
+
+shell:
+    program: /bin/bash
+    args:
+      - --login
+
+key_bindings:
+  - { key: Up,       mods: Alt,     chars: "\x1b[1;5A"                   }
+  - { key: Down,     mods: Alt,     chars: "\x1b[1;5B"                   }
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
