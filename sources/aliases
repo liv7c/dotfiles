@@ -3,13 +3,6 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias dot="cd ~/dotfiles"
-
-# git related
-alias g="git"
-alias s="git status -s"
-alias diff="git diff"
-alias push="git push"
 
 # npm related
 alias npms="npm run start"
@@ -19,6 +12,7 @@ alias npmb="npm run build"
 # each keystroke counts...
 alias nv="nvim"
 alias tm="tmux"
+alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
 alias ru="cd ~/projects/rust"
 

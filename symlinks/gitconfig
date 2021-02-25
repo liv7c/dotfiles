@@ -34,8 +34,14 @@
   autosquash = true
 
 [alias]
+  aa = add --all
   s = status -s
   st = status
+  ci = commit --verbose
+  ct = commit -m
+  cp = cherry-pick
+  amend = commit --amend
+  dc = diff --cached
   l = log --oneline --graph
   la = !git l --all
   pf = push --force-with-lease
