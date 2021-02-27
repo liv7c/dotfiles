@@ -1,16 +1,16 @@
 #!/bin/bash
+# Init script to set up the symlinks for the config files
+# Usage: ./init
 
-# to get correct dotfiles directory path
 CURRENTDIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"
 HOMEDIR=/Users/oliviac
 
-# the fun begins...
 echo "Changing to the ${CURRENTDIR} directory"
 cd ${CURRENTDIR}
 
 
 # create symlinks for all files in symlinks directory
-function create_symlinks {
+create_symlinks() {
   for file in "${CURRENTDIR}/symlinks"/*; do
     local filename
     filename="$(basename "${file}")"
@@ -19,12 +19,12 @@ function create_symlinks {
      [[ -r ${file} ]] && [[ -e ${file} ]] && rm -f "${HOMEDIR}/.${filename}" && ln -s "${file}" "${HOMEDIR}/.${filename}"
   done
 
-  # spaceship config
+  # spaceship prompt config
   ln -sf ${CURRENTDIR}/config/starship.toml ${HOMEDIR}/.config/starship.toml
 }
 
 # create symlink for neovim config
-function sync_vim {
+sync_vim() {
   for file in `find . -regex ".*\.vim$"`; do
     mkdir -p ~/.config/nvim/plugin
     mkdir -p ~/.config/nvim/after/plugin
