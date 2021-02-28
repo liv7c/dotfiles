@@ -10,6 +10,7 @@ alias npmt="npm run test"
 alias npmb="npm run build"
 
 # each keystroke counts...
+alias g="git"
 alias nv="nvim"
 alias tm="tmux"
 alias dot="cd ~/dotfiles"
