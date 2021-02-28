@@ -5,30 +5,29 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" for testing
+" testing
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 
-" repeat commands from vim surround
-Plug 'tpope/vim-repeat'
-
-" react and typescript
+" syntax highlighting
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'cespare/vim-toml'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
 
+" must-have
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
-" ui theme
+" colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -46,9 +45,6 @@ augroup CLEAN_SETUP
   autocmd!
   autocmd BufWritePre * :call TrimWhitespace()
 augroup END
-
-" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " disable auto commenting on next line when using single line comments only
 inoremap <expr> <enter> getline('.') =~ '^\s*//' ? '<enter><esc>S' : '<enter>'
