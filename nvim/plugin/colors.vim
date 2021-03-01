@@ -3,6 +3,10 @@ fun! ColorMyVim()
   colorscheme lucius
   LuciusDarkHighContrast
 
+  let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
   " tab bar
   hi TabLineFill guifg=Black guibg=White
   hi TabLineSel guifg=White guibg=Black
