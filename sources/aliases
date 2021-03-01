@@ -9,12 +9,17 @@ alias npms="npm run start"
 alias npmt="npm run test"
 alias npmb="npm run build"
 
+# tmux related
+alias tm="tmux"
+alias tma="tmux attach-session"
+
 # each keystroke counts...
 alias g="git"
 alias nv="nvim"
-alias tm="tmux"
+
 alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
+alias er="cd ~/courses/epic_react"
 alias ru="cd ~/projects/rust"
 
 # not useful at all...
