@@ -10,10 +10,11 @@ Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 
 " syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'cespare/vim-toml'
+Plug 'neoclide/jsonc.vim'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
