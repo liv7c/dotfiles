@@ -1,10 +1,11 @@
 fun! ColorMyVim()
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  colorscheme lucius
-  LuciusDarkHighContrast
+  colorscheme night-owl
+  " colorscheme lucius
+  " LuciusDarkHighContrast
 
   let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'nightowl',
       \ }
 
   " tab bar
