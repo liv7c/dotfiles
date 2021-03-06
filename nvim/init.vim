@@ -13,6 +13,7 @@ Plug 'tpope/vim-dispatch'
 
 " syntax highlighting
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'cespare/vim-toml'
