@@ -7,9 +7,9 @@ window:
     startup_mode: Maximized
 
 font:
-    size: 13
+    size: 14
     normal:
-      family: Hasklig
+      family: Dank Mono
       style: Regular
 
 shell:
