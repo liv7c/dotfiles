@@ -8,6 +8,9 @@
   autocrlf = input
   excludesfile = ~/.gitignore
 
+[init]
+  defaultBranch = main
+
 [commit]
   gpgsign = true
 
