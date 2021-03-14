@@ -50,3 +50,4 @@ set updatetime=300
 set shortmess+=c
 
 highlight clear LineNr
+highlight Comment cterm=italic gui=italic
