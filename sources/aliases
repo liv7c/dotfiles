@@ -9,6 +9,16 @@ alias npms="npm run start"
 alias npmt="npm run test"
 alias npmb="npm run build"
 
+# yarn related
+alias ys="yarn start"
+alias yd="yarn dev"
+alias yt="yarn test"
+
+# rust
+alias c="cargo"
+alias ct="cargo test"
+alias cr="cargo run"
+
 # tmux related
 alias tm="tmux"
 alias tma="tmux attach-session"
@@ -16,6 +26,7 @@ alias tma="tmux attach-session"
 # each keystroke counts...
 alias g="git"
 alias nv="nvim"
+alias e="nvim"
 
 alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
