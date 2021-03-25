@@ -31,6 +31,7 @@ alias e="nvim"
 alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
 alias er="cd ~/courses/epic_react"
+alias p="cd ~/projects"
 alias ru="cd ~/projects/rust"
 
 # not useful at all...
