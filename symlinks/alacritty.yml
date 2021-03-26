@@ -5,6 +5,9 @@ colors:
 
 window:
     startup_mode: Maximized
+    padding:
+      x: 5
+      y: 2
 
 font:
     size: 14
