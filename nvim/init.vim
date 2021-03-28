@@ -13,11 +13,12 @@ Plug 'tpope/vim-dispatch'
 
 " syntax highlighting
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
-Plug 'cespare/vim-toml'
 Plug 'neoclide/jsonc.vim'
+Plug 'cespare/vim-toml'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
