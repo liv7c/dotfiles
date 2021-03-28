@@ -32,7 +32,7 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'haishanh/night-owl.vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
 
 call plug#end()

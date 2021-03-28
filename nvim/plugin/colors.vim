@@ -1,11 +1,13 @@
 fun! ColorMyVim()
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  colorscheme night-owl
   " colorscheme lucius
   " LuciusDarkHighContrast
+  let g:material_terminal_italics = 1
+  let g:material_theme_style = 'darker'
+  colorscheme material
 
   let g:lightline = {
-      \ 'colorscheme': 'nightowl',
+      \ 'colorscheme': 'material_vim',
       \ }
 
   " tab bar
