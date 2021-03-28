@@ -31,6 +31,9 @@ set termguicolors
 set nohlsearch " remove highlight searches
 set incsearch " highlight expressions as you search
 
+" no match parens
+set noshowmatch
+
 " no backup
 set noswapfile
 set nobackup

@@ -40,6 +40,9 @@ call plug#end()
 " leader key
 let mapleader=" "
 
+" turn off matching parens highlighting
+let g:loaded_matchparen=1
+
 " autocommands
 fun! TrimWhitespace()
     let l:save = winsaveview()
