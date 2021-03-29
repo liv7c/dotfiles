@@ -14,10 +14,8 @@ alias ys="yarn start"
 alias yd="yarn dev"
 alias yt="yarn test"
 
-# rust
-alias c="cargo"
-alias ct="cargo test"
-alias cr="cargo run"
+# rust related
+alias ca="cargo"
 
 # tmux related
 alias tm="tmux"
@@ -28,11 +26,11 @@ alias g="git"
 alias nv="nvim"
 alias e="nvim"
 
+# commonly used directories
 alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
 alias er="cd ~/courses/epic_react"
 alias p="cd ~/projects"
-alias ru="cd ~/projects/rust"
 
 # not useful at all...
 alias ll="ls -l | lolcat" # adding some rainbow colors :)
