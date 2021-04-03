@@ -19,6 +19,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/jsonc.vim'
 Plug 'cespare/vim-toml'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
