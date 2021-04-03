@@ -32,5 +32,8 @@ alias co="cd ~/courses"
 alias er="cd ~/courses/epic_react"
 alias p="cd ~/projects"
 
+# bat - better cat with colored output and other goodies
+alias bat="bat --style='numbers,changes' --theme='TwoDark'"
+
 # not useful at all...
 alias ll="ls -l | lolcat" # adding some rainbow colors :)
