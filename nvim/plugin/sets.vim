@@ -28,6 +28,8 @@ syntax enable " syntax highlighting
 set termguicolors
 
 " search
+set ignorecase
+set smartcase
 set nohlsearch " remove highlight searches
 set incsearch " highlight expressions as you search
 
@@ -54,3 +56,4 @@ set shortmess+=c
 
 highlight clear LineNr
 highlight Comment cterm=italic gui=italic
+
