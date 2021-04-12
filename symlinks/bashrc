@@ -3,6 +3,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 export PATH=${PATH}:/Users/oliviac/Library/Python/3.7/bin
 # add cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+# add folder containing custom bash scripts to path
+export PATH="$HOME/projects/bash_scripts:$PATH"
 
 source "$HOME/.cargo/env"
 
