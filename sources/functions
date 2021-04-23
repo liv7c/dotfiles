@@ -1,8 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # create a new directory and navigate to it
 mkd() {
 	mkdir -p "$@" && cd "$_";
+}
+
+# color grep output
+grep() {
+  command grep --color=auto "$@"
 }
 
 # to find git commit sha (very useful when using git rebase -i)

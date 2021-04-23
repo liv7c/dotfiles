@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # File containing git helper functions
 # Usage in gitconfig file in the alias section
 
