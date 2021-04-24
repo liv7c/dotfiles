@@ -62,6 +62,7 @@ nmap <F2> <Plug>(coc-rename)
 let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-emmet',
+      \ 'coc-docker',
       \ 'coc-pairs',
       \ 'coc-tsserver',
       \ 'coc-html',
