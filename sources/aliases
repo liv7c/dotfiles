@@ -36,5 +36,6 @@ alias p="cd ~/projects"
 # bat - better cat with colored output and other goodies
 alias bat="bat --style='numbers,changes' --theme='TwoDark'"
 
-# not useful at all...
-alias ll="ls -l | lolcat" # adding some rainbow colors :)
+# ls aliases for color output + long form
+alias ls="ls -G"
+alias ll="ls -lG"
