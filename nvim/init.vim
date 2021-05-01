@@ -35,8 +35,8 @@ Plug 'tpope/vim-repeat'
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
 Plug 'morhetz/gruvbox'
-Plug 'liuchengxu/space-vim-dark'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
@@ -63,6 +63,9 @@ augroup END
 inoremap <expr> <enter> getline('.') =~ '^\s*//' ? '<enter><esc>S' : '<enter>'
 nnoremap <expr> O getline('.') =~ '^\s*//' ? 'O<esc>S' : 'O'
 nnoremap <expr> o getline('.') =~ '^\s*//' ? 'o<esc>S' : 'o'
+
+" other useful remaps
+vnoremap <leader>p "_dP
 
 " configure closing tags file types
 let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
