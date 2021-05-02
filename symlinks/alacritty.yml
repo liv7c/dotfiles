@@ -39,7 +39,7 @@ window:
       y: 2
 
 font:
-    size: 14
+    size: 14.5
     normal:
       family: Dank Mono
       style: Regular
