@@ -6,6 +6,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # add folder containing custom bash scripts to path
 export PATH="$HOME/projects/bash_scripts:$PATH"
 
+export EDITOR='nvim'
+
 source "$HOME/.cargo/env"
 
 source_config_files() {
