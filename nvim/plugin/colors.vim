@@ -1,13 +1,21 @@
 fun! ColorMyVim()
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  " colorscheme lucius
-  " LuciusDarkHighContrast
-  let g:material_terminal_italics = 1
-  let g:material_theme_style = 'darker'
+  colorscheme lucius
+  LuciusDark
+
+  " let g:molokai_original = 1
+  " colorscheme molokai
+
+  " let g:sonokai_style = 'default'
+  " let g:sonokai_enable_italic = 1
+  " colorscheme sonokai
+  " colorscheme PaperColor
+
   colorscheme material
+  " let g:material_theme_style = ''
+  let g:material_terminal_italics = 1
 
   let g:lightline = {
-      \ 'colorscheme': 'material_vim',
+      \ 'colorscheme': 'wombat',
       \ }
 
   " tab bar

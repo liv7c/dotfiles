@@ -15,3 +15,6 @@ nnoremap ,, <c-^>
 nnoremap <C-k> :cnext<CR>
 nnoremap <C-j> :cprev<CR>
 
+" nerd tree
+nnoremap <C-n> :NERDTreeFocus<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>

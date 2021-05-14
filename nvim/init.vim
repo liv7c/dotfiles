@@ -11,16 +11,19 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 
+" nerd tree
+Plug 'preservim/nerdtree'
+
 " syntax highlighting
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/jsonc.vim'
+Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -34,9 +37,8 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'morhetz/gruvbox'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'tomasr/molokai'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
