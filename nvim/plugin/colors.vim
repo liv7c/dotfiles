@@ -22,6 +22,8 @@ fun! ColorMyVim()
   hi TabLineFill guifg=Black guibg=White
   hi TabLineSel guifg=White guibg=Black
   hi TabLine guifg=Grey guibg=Black
+
+  highlight NormalFloat ctermbg=0 guibg=Black
 endfun
 
 call ColorMyVim()
