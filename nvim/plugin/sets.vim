@@ -25,7 +25,9 @@ set signcolumn=number
 
 " ui
 syntax enable " syntax highlighting
-set termguicolors
+if has('termguicolors')
+  set termguicolors
+endif
 
 " search
 set ignorecase
@@ -56,4 +58,3 @@ set shortmess+=c
 
 highlight clear LineNr
 highlight Comment cterm=italic gui=italic
-

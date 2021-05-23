@@ -41,6 +41,7 @@
   s = status -s
   st = status
   c = commit --verbose
+  ct = commit
   cm = commit -m
   cp = cherry-pick
   co = checkout
