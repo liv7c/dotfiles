@@ -15,13 +15,13 @@ Plug 'tpope/vim-dispatch'
 Plug 'preservim/nerdtree'
 
 " syntax highlighting
-" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/jsonc.vim'
 Plug 'jparise/vim-graphql'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 
@@ -40,6 +40,8 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'itchyny/lightline.vim'
+
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 
