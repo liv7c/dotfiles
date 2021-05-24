@@ -1,7 +1,8 @@
 {
   "diagnostic.enable": false,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "gohtmltmpl": "html"
   },
   "suggest.noselect": false,
   "eslint.autoFixOnSave": true,

@@ -72,4 +72,4 @@ nnoremap <expr> o getline('.') =~ '^\s*//' ? 'o<esc>S' : 'o'
 vnoremap <leader>p "_dP
 
 " configure closing tags file types
-let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx'
+let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx, *.tmpl'
