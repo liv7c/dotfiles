@@ -25,9 +25,6 @@ set signcolumn=number
 
 " ui
 syntax enable " syntax highlighting
-if has('termguicolors')
-  set termguicolors
-endif
 
 " search
 set ignorecase
@@ -49,6 +46,11 @@ set hidden " can switch to other buffers even when unsaved changes
 " use system clipboard
 set clipboard=unnamed
 
+if has('termguicolors')
+  set termguicolors
+endif
+
+
 " ui
 set background=dark
 
@@ -58,3 +60,4 @@ set shortmess+=c
 
 highlight clear LineNr
 highlight Comment cterm=italic gui=italic
+" call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")

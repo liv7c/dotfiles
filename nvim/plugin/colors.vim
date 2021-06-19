@@ -1,21 +1,15 @@
 fun! ColorMyVim()
   colorscheme lucius
-  LuciusDark
+  LuciusDarkHighContrast
+  " LuciusBlack
 
-  " let g:molokai_original = 1
-  " colorscheme molokai
+  " let base16colorspace=256
+  " colorscheme base16-gruvbox-dark-hard
 
-  " let g:sonokai_style = 'default'
-  " let g:sonokai_enable_italic = 1
-  " colorscheme sonokai
-  " colorscheme PaperColor
-
-  colorscheme material
-  " let g:material_theme_style = ''
-  let g:material_terminal_italics = 1
+  " colorscheme codedark
 
   let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'powerline',
       \ }
 
   " tab bar
@@ -23,7 +17,7 @@ fun! ColorMyVim()
   hi TabLineSel guifg=White guibg=Black
   hi TabLine guifg=Grey guibg=Black
 
-  highlight NormalFloat ctermbg=0 guibg=Black
+  " highlight NormalFloat ctermbg=0 guibg=Black
 endfun
 
 call ColorMyVim()
