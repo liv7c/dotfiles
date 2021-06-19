@@ -23,6 +23,7 @@
     "javascriptreact",
     "typescript.tsx",
     "rust",
-    "graphql"
+    "graphql",
+    "svelte"
   ]
 }

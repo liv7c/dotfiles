@@ -24,6 +24,7 @@ Plug 'jparise/vim-graphql'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -36,9 +37,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
+Plug 'tomasiser/vim-code-dark'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
