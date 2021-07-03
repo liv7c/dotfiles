@@ -1,5 +1,6 @@
 {
   "diagnostic.enable": false,
+  "signature.preferShownAbove": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "gohtmltmpl": "html"
@@ -13,6 +14,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
@@ -23,7 +25,6 @@
     "javascriptreact",
     "typescript.tsx",
     "rust",
-    "graphql",
-    "svelte"
+    "graphql"
   ]
 }
