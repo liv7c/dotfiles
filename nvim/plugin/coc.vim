@@ -31,6 +31,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+
 " Remap for do codeAction and autofix
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
@@ -77,6 +78,5 @@ let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-styled-components',
       \ 'coc-rls',
-      \ 'coc-rust-analyzer',
-      \ 'coc-svelte',
+      \ 'coc-rust-analyzer'
       \ ]
