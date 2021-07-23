@@ -3,12 +3,13 @@ fun! ColorMyVim()
   " LuciusDarkHighContrast
   LuciusBlack
 
-  " let base16colorspace=256
-  " colorscheme base16-gruvbox-dark-hard
-
+  " let g:material_terminal_italics = 1
+  " let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
+  " let g:material_theme_style = 'ocean'
+  " colorscheme material
 
   let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'default'
       \ }
 
   " tab bar

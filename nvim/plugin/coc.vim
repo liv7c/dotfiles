@@ -84,5 +84,6 @@ let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-styled-components',
       \ 'coc-rls',
-      \ 'coc-rust-analyzer'
+      \ 'coc-rust-analyzer',
+      \ 'coc-svelte'
       \ ]

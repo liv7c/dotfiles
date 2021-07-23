@@ -37,7 +37,7 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'chriskempson/base16-vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
