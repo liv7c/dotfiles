@@ -37,7 +37,8 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'adrian5/oceanic-next-vim'
+Plug 'sonjapeterson/1989.vim'
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -67,8 +68,15 @@ inoremap <expr> <enter> getline('.') =~ '^\s*//' ? '<enter><esc>S' : '<enter>'
 nnoremap <expr> O getline('.') =~ '^\s*//' ? 'O<esc>S' : 'O'
 nnoremap <expr> o getline('.') =~ '^\s*//' ? 'o<esc>S' : 'o'
 
-" other useful remaps
-vnoremap <leader>p "_dP
-
 " configure closing tags file types
 let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx, *.tmpl'
+
+" Useful remaps
+" copy the rest of the line from the location you are in the line
+nnoremap Y y$
+
+" moving text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+nnoremap ,k :m .-2<CR>==
+nnoremap ,j :m .+1<CR>==
