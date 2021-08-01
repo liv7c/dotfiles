@@ -66,6 +66,9 @@ nnoremap <CR> :noh<CR><CR>
 " Remap for rename current word
 nmap <F2> <Plug>(coc-rename)
 
+" remap for coc-restclient
+noremap <Leader>0 :CocCommand rest-client.request <cr>
+
 let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-emmet',
@@ -85,5 +88,5 @@ let g:coc_global_extensions = [
       \ 'coc-styled-components',
       \ 'coc-rls',
       \ 'coc-rust-analyzer',
-      \ 'coc-svelte'
+      \ 'coc-restclient'
       \ ]

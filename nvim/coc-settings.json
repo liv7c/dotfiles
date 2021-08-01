@@ -15,6 +15,7 @@
     "typescriptreact"
   ],
   "prettier.singleQuote": true,
+  "rest-client.showHeaders": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
