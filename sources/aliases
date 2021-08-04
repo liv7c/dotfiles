@@ -22,9 +22,13 @@ alias tma="tmux attach-session"
 alias tx="tmuxinator"
 
 # each keystroke counts...
-alias g="git"
 alias nv="nvim"
 alias e="nvim"
+
+# git related
+alias g="git"
+alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add'
+alias gri='git rebase -i `fcs`'
 
 # commonly used directories
 alias d="cd ~/Documents"
