@@ -77,7 +77,6 @@ let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-html',
       \ 'coc-css',
-      \ 'coc-emoji',
       \ 'coc-yaml',
       \ 'coc-prettier',
       \ 'coc-xml',

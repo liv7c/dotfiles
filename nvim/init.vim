@@ -20,7 +20,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/jsonc.vim'
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
@@ -37,8 +37,6 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'adrian5/oceanic-next-vim'
-Plug 'sonjapeterson/1989.vim'
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
