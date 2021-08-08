@@ -38,6 +38,7 @@ Plug 'tpope/vim-repeat'
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
+Plug 'charliesbot/night-owl.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 

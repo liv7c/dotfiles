@@ -1,11 +1,12 @@
 fun! ColorMyVim()
-  colorscheme lucius
+  " colorscheme lucius
   " LuciusDarkHighContrast
-  LuciusDark
+  " LuciusDark
   " LuciusBlack
+  colorscheme night-owl
 
   let g:lightline = {
-      \ 'colorscheme': 'default'
+      \ 'colorscheme': 'wombat'
       \ }
 
   " tab bar
