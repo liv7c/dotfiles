@@ -24,6 +24,7 @@ Plug 'neoclide/jsonc.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
+Plug 'jxnblk/vim-mdx-js'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -38,7 +39,6 @@ Plug 'tpope/vim-repeat'
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
-Plug 'charliesbot/night-owl.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
