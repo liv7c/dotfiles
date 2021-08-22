@@ -19,7 +19,7 @@ set completeopt=menu,preview " autocomplete
 set nu " line numbers...
 set relativenumber
 
-set scrolloff=8 " scroll off when you get to the end of buffer
+set scrolloff=5 " scroll off when you get to the end of buffer
 
 set signcolumn=number
 
