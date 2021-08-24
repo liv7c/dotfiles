@@ -6,6 +6,14 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # add folder containing custom bash scripts to path
 export PATH="$HOME/projects/bash_scripts:$PATH"
 
+# add wasm
+export WASMTIME_HOME="$HOME/.wasmtime"
+export PATH="$WASMTIME_HOME/bin:$PATH"
+
+# add volta (node / npm / yarn versions management tool)
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 export EDITOR='nvim'
 
 source "$HOME/.cargo/env"
@@ -48,4 +56,3 @@ eval "$(starship init bash)"
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
-
