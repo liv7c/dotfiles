@@ -10,10 +10,6 @@ export PATH="$HOME/projects/bash_scripts:$PATH"
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 
-# add volta (node / npm / yarn versions management tool)
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 export EDITOR='nvim'
 
 source "$HOME/.cargo/env"
