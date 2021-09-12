@@ -72,6 +72,7 @@ noremap <Leader>0 :CocCommand rest-client.request <cr>
 let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-emmet',
+      \ 'coc-eslint',
       \ 'coc-docker',
       \ 'coc-pairs',
       \ 'coc-tsserver',
