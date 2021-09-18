@@ -38,6 +38,8 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
+Plug 'embark-theme/vim', { 'as': 'embark' }
+" Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
