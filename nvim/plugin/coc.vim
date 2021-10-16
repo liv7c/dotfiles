@@ -88,5 +88,6 @@ let g:coc_global_extensions = [
       \ 'coc-styled-components',
       \ 'coc-rls',
       \ 'coc-rust-analyzer',
-      \ 'coc-restclient'
+      \ 'coc-restclient',
+      \ 'coc-svelte',
       \ ]

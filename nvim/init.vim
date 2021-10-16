@@ -25,6 +25,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'jxnblk/vim-mdx-js'
+Plug 'pantharshit00/vim-prisma'
+Plug 'leafOfTree/vim-svelte-plugin'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
