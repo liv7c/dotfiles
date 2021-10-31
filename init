@@ -2,11 +2,11 @@
 # Init script to set up the symlinks for the config files
 # Usage: ./init
 
-CURRENTDIR="$(cd "$(dirname "${BASH_SOURCE}")" && pwd)"
+CURRENTDIR="$(pwd)"
 HOMEDIR=/Users/oliviac
 
 echo "Changing to the ${CURRENTDIR} directory"
-cd ${CURRENTDIR}
+cd "${CURRENTDIR}" || exit
 
 
 # create symlinks for all files in symlinks directory
@@ -20,7 +20,7 @@ create_symlinks() {
   done
 
   # spaceship prompt config
-  ln -sf ${CURRENTDIR}/config/starship.toml ${HOMEDIR}/.config/starship.toml
+  ln -sf "${CURRENTDIR}/config/starship.toml" "${HOMEDIR}/.config/starship.toml"
 }
 
 # create symlink for neovim config
@@ -31,7 +31,7 @@ sync_vim() {
     mkdir -p ~/.config/nvim/lua
 
     echo "Creating a symlink to $file in home directory"
-    ln -sf ${CURRENTDIR}/${file} ${HOMEDIR}/.config/${file}
+    ln -sf "${CURRENTDIR}/${file}" "${HOMEDIR}/.config/${file}"
   done
 }
 

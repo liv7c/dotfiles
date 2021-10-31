@@ -33,7 +33,7 @@ alias gri='git rebase -i `fcs`'
 # commonly used directories
 alias d="cd ~/Documents"
 alias dt="cd ~/Desktop"
-alias dot="cd ~/dotfiles"
+alias dot="cd ~/projects/dotfiles"
 alias co="cd ~/courses"
 alias er="cd ~/courses/epic_react"
 alias p="cd ~/projects"

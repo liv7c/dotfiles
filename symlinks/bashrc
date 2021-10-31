@@ -16,7 +16,7 @@ source "$HOME/.cargo/env"
 
 source_config_files() {
   local homedir=/Users/oliviac
-  local dotfilesdir="${homedir}/dotfiles"
+  local dotfilesdir="${homedir}/projects/dotfiles"
 
   shopt -s nullglob
   for file in "${dotfilesdir}/sources/"*; do
