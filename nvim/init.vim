@@ -78,6 +78,9 @@ nnoremap Y y$
 " make file executable
 nnoremap <leader>x :!chmod +x %<CR>
 
+" create new tmux session quickly using custom script
+nnoremap <silent> <C-s> :silent !tmux neww tmux_sessioner<CR>
+
 " moving text
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
