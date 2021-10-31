@@ -78,6 +78,9 @@ let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.tsx, *.tmpl'
 " copy the rest of the line from the location you are in the line
 nnoremap Y y$
 
+" make file executable
+nnoremap <leader>x :!chmod +x %<CR>
+
 " moving text
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
