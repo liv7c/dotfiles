@@ -8,7 +8,7 @@ fun! ColorMyVim()
   " colorscheme embark
 
   let g:lightline = {
-      \ 'colorscheme': 'powerline'
+      \ 'colorscheme': 'default'
       \ }
 
   " tab bar

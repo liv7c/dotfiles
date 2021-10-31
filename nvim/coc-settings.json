@@ -28,7 +28,5 @@
     "rust",
     "graphql",
     "prisma",
-    "svelte"
-  ],
-  "svelte.enable-ts-plugin": true
+  ]
 }

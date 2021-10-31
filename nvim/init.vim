@@ -26,7 +26,6 @@ Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'pantharshit00/vim-prisma'
-Plug 'leafOfTree/vim-svelte-plugin'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,8 +39,6 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
-Plug 'embark-theme/vim', { 'as': 'embark' }
-" Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
