@@ -15,18 +15,18 @@ Plug 'tpope/vim-dispatch'
 Plug 'preservim/nerdtree'
 
 " syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neoclide/jsonc.vim'
-" Plug 'pangloss/vim-javascript'
-" Plug 'MaxMEllon/vim-jsx-pretty'
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'jparise/vim-graphql'
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'jparise/vim-graphql'
 " Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-" Plug 'cespare/vim-toml'
-" Plug 'stephpy/vim-yaml'
-" Plug 'jxnblk/vim-mdx-js'
-" Plug 'pantharshit00/vim-prisma'
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+Plug 'jxnblk/vim-mdx-js'
+Plug 'pantharshit00/vim-prisma'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,6 +40,7 @@ Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
 Plug 'jonathanfilip/vim-lucius'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
