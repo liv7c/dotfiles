@@ -5,6 +5,7 @@ alias ....="cd ../../.."
 
 # npm related
 alias npms="npm run start"
+alias npmd="npm run dev"
 alias npmt="npm run test"
 alias npmb="npm run build"
 
