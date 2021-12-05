@@ -28,6 +28,10 @@ Plug 'stephpy/vim-yaml'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'pantharshit00/vim-prisma'
 
+" svelte related
+Plug 'evanleck/vim-svelte'
+Plug 'Shougo/context_filetype.vim'
+
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'

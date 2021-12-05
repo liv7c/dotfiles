@@ -2,6 +2,7 @@
 au FileType html setlocal formatprg=prettier
 au FileType gohtmltmpl setlocal formatprg=prettier
 au FileType javascript setlocal formatprg=prettier
+au FileType svelte setlocal formatprg=prettier
 au FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 au FileType css setlocal formatprg=prettier\ --parser\ cs
 au FileType go setlocal formatprg=gofmt
@@ -14,3 +15,21 @@ au FileType go set tabstop=4
 
 " json into jsonc automatically
 autocmd BufNewFile,BufRead *.json set filetype=jsonc
+
+" correct comments using svelte
+if !exists('g:context_filetype#same_filetypes')
+  let g:context_filetype#filetypes = {}
+endif
+
+let g:context_filetype#filetypes.svelte =
+\ [
+\   {'filetype' : 'javascript', 'start' : '<script>', 'end' : '</script>'},
+\   {
+\     'filetype': 'typescript',
+\     'start': '<script\%( [^>]*\)\? \%(ts\|lang="\%(ts\|typescript\)"\)\%( [^>]*\)\?>',
+\     'end': '',
+\   },
+\   {'filetype' : 'css', 'start' : '<style \?.*>', 'end' : '</style>'},
+\ ]
+
+let g:ft = ''
