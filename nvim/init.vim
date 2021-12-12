@@ -43,8 +43,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
 " colorscheme and ui
+Plug 'tomasr/molokai'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'itchyny/lightline.vim'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }

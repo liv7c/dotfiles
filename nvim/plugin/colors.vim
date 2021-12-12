@@ -1,12 +1,11 @@
 fun! ColorMyVim()
-  colorscheme lucius
-  LuciusDark
+  " colorscheme lucius
+  " " LuciusDark
   " LuciusBlack
-
-  " colorscheme onehalfdark
+  colorscheme molokai
 
   let g:lightline = {
-      \ 'colorscheme': 'powerline'
+      \ 'colorscheme': 'default'
       \ }
 
   " tab bar
