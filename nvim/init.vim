@@ -15,18 +15,16 @@ Plug 'tpope/vim-dispatch'
 Plug 'preservim/nerdtree'
 
 " syntax highlighting
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neoclide/jsonc.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'jparise/vim-graphql'
-" Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'jxnblk/vim-mdx-js'
-Plug 'pantharshit00/vim-prisma'
+" Plug 'pantharshit00/vim-prisma'
 
 " svelte related
 Plug 'evanleck/vim-svelte'
@@ -41,13 +39,14 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
 
 " colorscheme and ui
 Plug 'tomasr/molokai'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
 
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 
