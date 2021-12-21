@@ -1,8 +1,8 @@
 fun! ColorMyVim()
-  " colorscheme lucius
-  " " LuciusDark
+  colorscheme lucius
+  LuciusDark
   " LuciusBlack
-  colorscheme molokai
+  " colorscheme molokai
 
   let g:lightline = {
       \ 'colorscheme': 'default'

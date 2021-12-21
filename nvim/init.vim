@@ -20,6 +20,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
@@ -46,7 +47,7 @@ Plug 'tomasr/molokai'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
 
-" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 
