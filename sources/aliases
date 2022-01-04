@@ -19,8 +19,10 @@ alias ca="cargo"
 
 # tmux related
 alias tm="tmux"
+alias tmk="tmux kill-server"
 alias tma="tmux attach-session"
 alias tx="tmuxinator"
+alias tmns="tmux new-session -s misc -d"
 
 # each keystroke counts...
 alias nv="nvim"
