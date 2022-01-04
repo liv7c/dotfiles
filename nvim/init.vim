@@ -43,7 +43,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
 " colorscheme and ui
-Plug 'tomasr/molokai'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
 
