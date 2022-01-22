@@ -40,6 +40,7 @@
   aa = add --all
   s = status -s
   st = status
+  b = branch
   c = commit --verbose
   ct = commit
   cm = commit -m
