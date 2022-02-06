@@ -28,8 +28,8 @@ Plug 'jxnblk/vim-mdx-js'
 " Plug 'pantharshit00/vim-prisma'
 
 " svelte related
-Plug 'evanleck/vim-svelte'
-Plug 'Shougo/context_filetype.vim'
+" Plug 'evanleck/vim-svelte'
+" Plug 'Shougo/context_filetype.vim'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -46,6 +46,9 @@ Plug 'tpope/vim-unimpaired'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jonathanfilip/vim-lucius'
 Plug 'itchyny/lightline.vim'
+
+" for tailwind v3
+Plug 'yaegassy/coc-tailwindcss',  {'do': 'npm install && npm run build', 'branch': 'feat/support-v3-and-use-server-pkg'}
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
