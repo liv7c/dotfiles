@@ -1,5 +1,7 @@
+let g:plug_home = stdpath("data") . "/plugged"
+
 " Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin(plug_home)
 
 " fuzzy finder
 Plug 'nvim-lua/popup.nvim'
@@ -45,6 +47,7 @@ Plug 'tpope/vim-unimpaired'
 " colorscheme and ui
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jonathanfilip/vim-lucius'
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
 " for tailwind v3

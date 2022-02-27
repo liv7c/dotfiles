@@ -36,7 +36,7 @@ sync_vim() {
 }
 
 create_symlinks
-# sync_vim
+sync_vim
 
 unset create_symlinks
 unset sync_vim

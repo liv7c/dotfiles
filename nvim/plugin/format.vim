@@ -16,6 +16,10 @@ au FileType go set tabstop=4
 " json into jsonc automatically
 autocmd BufNewFile,BufRead *.json set filetype=jsonc
 
+" convert njk and ejs filetypes to html
+au BufRead,BufNewFile *.njk set filetype=html
+au BufRead,BufNewFile *.ejs set filetype=html
+
 " correct comments using svelte
 if !exists('g:context_filetype#same_filetypes')
   let g:context_filetype#filetypes = {}
