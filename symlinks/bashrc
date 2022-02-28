@@ -7,6 +7,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # add folder containing custom bash scripts to path
 export PATH="$HOME/projects/bash_scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # add wasm
 export WASMTIME_HOME="$HOME/.wasmtime"
