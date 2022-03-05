@@ -18,6 +18,10 @@ alias yt="yarn test"
 # rust related
 alias ca="cargo"
 
+# go related
+# go test with watch mode + clearer error output
+alias gtw="gotestsum --format standard-verbose  --watch"
+
 # tmux related
 alias tm="tmux"
 alias tmk="tmux kill-server"
