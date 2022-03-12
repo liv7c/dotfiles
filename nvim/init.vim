@@ -26,12 +26,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
-Plug 'jxnblk/vim-mdx-js'
-" Plug 'pantharshit00/vim-prisma'
-
-" svelte related
-" Plug 'evanleck/vim-svelte'
-" Plug 'Shougo/context_filetype.vim'
+" Plug 'jxnblk/vim-mdx-js'
 
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -53,7 +48,7 @@ Plug 'itchyny/lightline.vim'
 " for tailwind v3
 Plug 'yaegassy/coc-tailwindcss',  {'do': 'npm install && npm run build', 'branch': 'feat/support-v3-and-use-server-pkg'}
 
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 
