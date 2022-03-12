@@ -7,6 +7,14 @@
   editor = nvim
   autocrlf = input
   excludesfile = ~/.gitignore
+  pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    side-by-side = true
 
 [init]
   defaultBranch = main
@@ -23,6 +31,7 @@
 [diff]
   renames = copies
   tool = vimdiff
+  colorMoved = default
 
 [fetch]
   prune = 1
