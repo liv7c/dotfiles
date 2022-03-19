@@ -36,6 +36,10 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" disable and enable coc
+nmap <leader>cd :CocDisable<CR>
+nmap <leader>ce :CocEnable<CR>
+
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
