@@ -42,6 +42,7 @@ Plug 'tpope/vim-unimpaired'
 " colorscheme and ui
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jonathanfilip/vim-lucius'
+Plug 'sonjapeterson/1989.vim'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
