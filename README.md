@@ -11,7 +11,7 @@ Personal config files for:
 * `init` is the script to run to set everything up. It is a shell script that creates a symlink for whatever file you put in the `symlinks` directory.
 If you feel like cloning this and use it as your own, change the `HOMEDIR` and `CURRENTDIR` variables in `init`
 * The `bashrc` sources whatever files are in the `sources` directory (in my case, just some functions and magical aliases).
-* the `nvim` folder contains all my neovim config. `init` contains a special function to symlink it all.
+* the `nvim` folder contains all my neovim config. `init` contains a special function to symlink all the files inside of that folder.
 * `nvim/plugin` contains the config of the plugins I use (like `coc`, `telescope`) + general vim settings (`sets.vim` and `navigation.vim`)
 
 ## Sources of inspiration / some great dotfiles repos
