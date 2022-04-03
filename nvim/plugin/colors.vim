@@ -1,12 +1,8 @@
 fun! ColorMyVim()
-  " colorscheme lucius
-  " LuciusDark
+  colorscheme lucius
+  LuciusDark
   " LuciusBlack
-  " colorscheme dracula
-  " let g:gruvbox_contrast_dark = 'hard'
-  " let g:gruvbox_italic = 1
-  " colorscheme gruvbox
-  colorscheme 1989
+  " colorscheme nord
 
   let g:lightline = {
       \ 'colorscheme': 'default'

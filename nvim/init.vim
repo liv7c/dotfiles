@@ -13,6 +13,8 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " nerd tree
 Plug 'preservim/nerdtree'
 
@@ -40,10 +42,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
 " colorscheme and ui
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jonathanfilip/vim-lucius'
-Plug 'sonjapeterson/1989.vim'
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 
 " for tailwind v3
