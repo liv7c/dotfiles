@@ -53,4 +53,4 @@ alias bat="bat --style='numbers,changes' --theme='TwoDark'"
 
 # ls aliases for color output + long form
 alias ls="ls -G"
-alias ll="ls -lG"
+alias ll="ls -lahG"

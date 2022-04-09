@@ -2,7 +2,7 @@
 
 # create a new directory and navigate to it
 mkd() {
-	mkdir -p "$@" && cd "$_";
+	mkdir -p "$@" && cd "$_" || return
 }
 
 # color grep output
