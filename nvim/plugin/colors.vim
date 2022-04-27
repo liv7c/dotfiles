@@ -1,11 +1,22 @@
 fun! ColorMyVim()
-  colorscheme lucius
-  LuciusDark
+  " colorscheme lucius
+  " LuciusDark
+  " LuciusWhite
   " LuciusBlack
-  " colorscheme nord
+
+  " let g:space_vim_dark_background = 235
+  " color space-vim-dark
+
+  " let g:gruvbox_italicize_strings = 1
+  " let g:gruvbox_contrast_dark = 'hard'
+  " colorscheme gruvbox
+
+  " let g:molokai_original = 1
+  " colorscheme molokai
+  colorscheme dracula
 
   let g:lightline = {
-      \ 'colorscheme': 'default'
+      \ 'colorscheme': 'dracula'
       \ }
 
   " tab bar
