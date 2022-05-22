@@ -54,3 +54,6 @@ alias bat="bat --style='numbers,changes' --theme='TwoDark'"
 # ls aliases for color output + long form
 alias ls="ls -G"
 alias ll="ls -lahG"
+
+# alias for k8s
+alias k="kubectl"
