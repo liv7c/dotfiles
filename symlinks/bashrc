@@ -6,6 +6,7 @@ export PATH=${PATH}:/Users/oliviac/Library/Python/3.7/bin
 export PATH="$HOME/projects/bash_scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH=$(go env GOPATH)/bin:$PATH
 
 # use GNU version of sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
@@ -54,3 +55,8 @@ eval "$(starship init bash)"
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# pnpm
+export PNPM_HOME="/Users/oliviac/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
