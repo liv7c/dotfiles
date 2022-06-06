@@ -3,54 +3,53 @@ draw_bold_text_with_bright_colors: true
 
 # source for colors https://github.com/alebelcor/alacritty-snazzy/blob/master/snazzy.yml
 colors:
-
   primary:
-    background: '#14191e'
-    foreground: '#dbdbdb'
+    background: "#14191e"
+    foreground: "#dbdbdb"
 
   selection:
-    text:       '#282a36'
-    background: '#feffff'
+    text: "#282a36"
+    background: "#feffff"
 
   normal:
-    black:   '#282a36'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#f1f1f0'
+    black: "#282a36"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
 
   bright:
-    black:   '#686868'
-    red:     '#ff5c57'
-    green:   '#5af78e'
-    yellow:  '#f3f99d'
-    blue:    '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan:    '#9aedfe'
-    white:   '#eff0eb'
+    black: "#686868"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#eff0eb"
 
 window:
-    startup_mode: Maximized
-    padding:
-      x: 5
-      y: 2
+  startup_mode: Maximized
+  padding:
+    x: 5
+    y: 2
 
 font:
-    size: 12.5
-    normal:
-      family: MonoLisa NF
-      style: Regular
+  size: 12.5
+  normal:
+    family: MonoLisa NF
+    style: Regular
 
 shell:
-    program: /bin/bash
-    args:
-      - --login
+  program: /bin/bash
+  args:
+    - --login
 
 key_bindings:
-  - { key: Up,       mods: Alt,     chars: "\x1b[1;5A"                   }
-  - { key: Down,     mods: Alt,     chars: "\x1b[1;5B"                   }
-  - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
-  - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
+  - { key: Up, mods: Alt, chars: "\x1b[1;5A" }
+  - { key: Down, mods: Alt, chars: "\x1b[1;5B" }
+  - { key: Left, mods: Alt, chars: "\x1bb" }
+  - { key: Right, mods: Alt, chars: "\x1bf" }
