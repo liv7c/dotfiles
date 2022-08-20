@@ -47,6 +47,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'buoto/gotests-vim'
 
+" prisma synthax highlighting
+Plug 'pantharshit00/vim-prisma'
+
 " git, linting and autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
