@@ -33,6 +33,9 @@ alias tmns="tmux new-session -s misc -d"
 alias nv="nvim"
 alias e="nvim"
 
+# vscode
+alias vsc="code ."
+
 # git related
 alias g="git"
 alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add'
