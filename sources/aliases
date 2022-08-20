@@ -3,6 +3,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# escape color sequences
+alias less="less -R"
+
 # npm related
 alias npms="npm run start"
 alias npmd="npm run dev"
