@@ -23,7 +23,7 @@ alias ca="cargo"
 
 # go related
 # go test with watch mode + clearer error output
-alias gtw="gotestsum --format testname  --watch"
+alias gtw="gotestsum --format testname  --watch -- -race"
 
 # tmux related
 alias tm="tmux"
