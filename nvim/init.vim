@@ -29,8 +29,9 @@ Plug 'tpope/vim-dispatch'
 
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-" nerd tree
-Plug 'preservim/nerdtree'
+" nvim-tree
+Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " syntax highlighting
 Plug 'neoclide/jsonc.vim'
@@ -64,6 +65,7 @@ Plug 'tpope/vim-unimpaired'
 " colorscheme and ui
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'jonathanfilip/vim-lucius'
+Plug 'sainnhe/everforest'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'

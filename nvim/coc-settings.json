@@ -12,7 +12,8 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "vue"
   ],
   "prettier.singleQuote": true,
   "rest-client.showHeaders": true,
@@ -29,6 +30,7 @@
     "rust",
     "graphql",
     "prisma",
+    "vue",
     "svelte"
   ],
   "svelte.enable-ts-plugin": true
