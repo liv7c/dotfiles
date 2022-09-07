@@ -18,6 +18,10 @@ alias ys="yarn start"
 alias yd="yarn dev"
 alias yt="yarn test"
 
+# pnpm related
+alias pn="pnpm"
+alias pns="pnpm start"
+
 # rust related
 alias ca="cargo"
 
