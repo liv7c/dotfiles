@@ -18,5 +18,5 @@ nnoremap <C-j> :cprev<CR>
 " nvim tree
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>n :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <C-r> :NvimTreeRefresh<CR>
 
