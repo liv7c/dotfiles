@@ -71,7 +71,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 
 " for tailwind v3
-Plug 'yaegassy/coc-tailwindcss',  {'do': 'npm install && npm run build', 'branch': 'feat/support-v3-and-use-server-pkg'}
+" Plug 'yaegassy/coc-tailwindcss',  {'do': 'npm install && npm run build', 'branch': 'feat/support-v3-and-use-server-pkg'}
+Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
@@ -115,6 +116,9 @@ nnoremap <silent> <C-s> :silent !tmux neww tmux_sessioner<CR>
 
 " copy full path of current file name to system clipboard
 nnoremap <leader>cp :let @+ = expand("%:p")<CR>
+
+" paste without losing what's in your register
+vnoremap <leader>p "_dP
 
 " moving text
 vnoremap J :m '>+1<CR>gv=gv

@@ -21,7 +21,7 @@ fun! ColorMyVim()
   " colorscheme everforest
 
   let g:lightline = {
-      \ 'colorscheme': 'powerline'
+      \ 'colorscheme': 'default'
       \ }
 
   " tab bar
