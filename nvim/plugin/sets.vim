@@ -59,9 +59,12 @@ set updatetime=300
 set shortmess+=c
 
 highlight clear LineNr
-highlight Comment cterm=italic gui=italic
+" highlight Comment cterm=italic gui=italic
 " hi Comment guifg=#777777
 " call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
 " highlight NormalFloat ctermbg=0 guibg=Black
-hi Pmenu ctermbg=black ctermfg=white
-hi Pmenu guibg=black guifg=white
+" hi Pmenu ctermbg=black ctermfg=white
+" hi Pmenu guibg=black guifg=white
+
+" highlight Normal guibg=none
+" highlight NonText guibg=none
