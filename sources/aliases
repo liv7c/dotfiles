@@ -54,9 +54,9 @@ alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents/docs"
 alias dot="cd ~/projects/dotfiles"
 alias co="cd ~/courses"
-alias er="cd ~/courses/epic_react"
 alias p="cd ~/projects"
 alias nconfig="cd ~/nvim-config"
+alias sb="cd ~/projects/swayandbreathe"
 
 # bat - better cat with colored output and other goodies
 alias bat="bat --style='numbers,changes' --theme='TwoDark'"

@@ -63,11 +63,10 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
 " colorscheme and ui
-Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug 'tomasr/molokai'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'sainnhe/everforest'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 
 " for tailwind v3
