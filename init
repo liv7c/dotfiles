@@ -24,19 +24,19 @@ create_symlinks() {
 }
 
 # create symlink for neovim config
-sync_vim() {
-  for file in $(find nvim -name "*.vim" -o -name "*.json"); do
-    mkdir -p ~/.config/nvim/plugin
-    mkdir -p ~/.config/nvim/after/plugin
-    mkdir -p ~/.config/nvim/lua
+# sync_vim() {
+#   for file in $(find nvim -name "*.vim" -o -name "*.json"); do
+#     mkdir -p ~/.config/nvim/plugin
+#     mkdir -p ~/.config/nvim/after/plugin
+#     mkdir -p ~/.config/nvim/lua
 
-    echo "Creating a symlink to $file in home directory"
-    ln -sf "${CURRENTDIR}/${file}" "${HOMEDIR}/.config/${file}"
-  done
-}
+#     echo "Creating a symlink to $file in home directory"
+#     ln -sf "${CURRENTDIR}/${file}" "${HOMEDIR}/.config/${file}"
+#   done
+# }
 
 create_symlinks
-sync_vim
+# sync_vim
 
 unset create_symlinks
-unset sync_vim
+# unset sync_vim
