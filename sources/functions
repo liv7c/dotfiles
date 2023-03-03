@@ -71,3 +71,8 @@ fcs() {
   echo -n $(echo "$commit" | sed "s/ .*//")
 }
 
+# get test coverage report for go applications
+go_cover () { 
+    t="/tmp/go-cover.$$.tmp"
+    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
+}
