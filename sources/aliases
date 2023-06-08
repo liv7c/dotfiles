@@ -3,6 +3,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# work
+alias repos="cd ~/repos"
+alias wui="cd ~/repos/welcome-ui/"
+
 # escape color sequences
 alias less="less -R"
 
@@ -52,11 +56,10 @@ alias gri='git rebase -i `fcs`'
 alias d="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias doc="cd ~/Documents/docs"
-alias dot="cd ~/projects/dotfiles"
+alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
 alias p="cd ~/projects"
 alias nconfig="cd ~/nvim-config"
-alias sb="cd ~/projects/swayandbreathe"
 
 # bat - better cat with colored output and other goodies
 alias bat="bat --style='numbers,changes' --theme='TwoDark'"
