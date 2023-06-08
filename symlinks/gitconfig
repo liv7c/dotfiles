@@ -38,7 +38,7 @@
 
 [push]
   default = simple
-  autoSetupRemote = true
+  autoSetupRemote = false
 
 [pull]
   rebase = merges
