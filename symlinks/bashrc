@@ -10,6 +10,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 # use GNU version of sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
+export GOPATH="/Users/oliviacoumans/go"
+
 export EDITOR='nvim'
 
 source_config_files() {
@@ -56,3 +58,6 @@ export PNPM_HOME="/Users/oliviac/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 . "$HOME/.cargo/env"
+
+TERM="xterm"
+export TERM
