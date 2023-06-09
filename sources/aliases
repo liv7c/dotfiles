@@ -6,6 +6,8 @@ alias ....="cd ../../.."
 # work
 alias repos="cd ~/repos"
 alias wui="cd ~/repos/welcome-ui/"
+alias repo_cli="cd ~/repos/wttj-cli"
+alias wfront="cd ~/repos/wttj-front"
 
 # escape color sequences
 alias less="less -R"
