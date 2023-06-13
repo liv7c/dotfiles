@@ -63,3 +63,6 @@ export PATH="$PNPM_HOME:$PATH"
 
 TERM="xterm"
 export TERM
+
+export KERL_CONFIGURE_OPTIONS="--without-javac"
+export KERL_BUILD_DOCS=no
