@@ -1,7 +1,7 @@
 [user]
   name = Olivia Coumans
   email = olivia.coumans@wttj.co
-  signingkey = 51858CCB49939D1E
+  signingkey = EF11C4EB0F831698
 
 [core]
   editor = nvim
