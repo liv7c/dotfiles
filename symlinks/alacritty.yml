@@ -3,33 +3,59 @@ draw_bold_text_with_bright_colors: true
 
 # source for colors https://github.com/alebelcor/alacritty-snazzy/blob/master/snazzy.yml
 colors:
+  name: Chalk (dark)
+  author: Chris Kempson
   primary:
-    background: "#14191e"
-    foreground: "#dbdbdb"
-
-  selection:
-    text: "#282a36"
-    background: "#feffff"
-
+    background: "#151515"
+    foreground: "#d0d0d0"
+  cursor:
+    text: "#151515"
+    cursor: "#d0d0d0"
   normal:
-    black: "#282a36"
-    red: "#ff5c57"
-    green: "#5af78e"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#f1f1f0"
-
+    black: "#151515"
+    red: "#fb9fb1"
+    green: "#acc267"
+    yellow: "#ddb26f"
+    blue: "#6fc2ef"
+    magenta: "#e1a3ee"
+    cyan: "#12cfc0"
+    white: "#d0d0d0"
   bright:
-    black: "#686868"
-    red: "#ff5c57"
-    green: "#5af78e"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#eff0eb"
+    black: "#505050"
+    red: "#fb9fb1"
+    green: "#acc267"
+    yellow: "#ddb26f"
+    blue: "#6fc2ef"
+    magenta: "#e1a3ee"
+    cyan: "#12cfc0"
+    white: "#f5f5f5"
+# colors:
+#   name: Chalk (light)
+#   author: Chris Kempson
+#   primary:
+#     background: "#f5f5f5"
+#     foreground: "#303030"
+#   # cursor:
+#   #   text: '#f5f5f5'
+#   #   cursor: '#303030'
+#   normal:
+#     black: "#151515"
+#     red: "#fb9fb1"
+#     green: "#acc267"
+#     yellow: "#ddb26f"
+#     blue: "#6fc2ef"
+#     magenta: "#e1a3ee"
+#     cyan: "#12cfc0"
+#     white: "#d0d0d0"
+#   bright:
+#     black: "#505050"
+#     red: "#fb9fb1"
+#     green: "#acc267"
+#     yellow: "#ddb26f"
+#     blue: "#6fc2ef"
+#     magenta: "#e1a3ee"
+#     cyan: "#12cfc0"
+#     white: "#f5f5f5"
 
 window:
   startup_mode: Maximized
@@ -40,7 +66,7 @@ window:
 font:
   size: 12.5
   normal:
-    family: MonoLisa NF
+    family: "MonoLisa NF"
     style: Regular
 
 shell:
