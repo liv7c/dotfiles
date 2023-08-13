@@ -34,6 +34,7 @@ Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " syntax highlighting
+Plug 'findango/vim-mdx'
 Plug 'neoclide/jsonc.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'

@@ -19,6 +19,7 @@ autocmd BufNewFile,BufRead *.json set filetype=jsonc
 " convert njk and ejs filetypes to html
 au BufRead,BufNewFile *.njk set filetype=html
 au BufRead,BufNewFile *.ejs set filetype=html
+au BufRead,BufNewFile *.mdx set filetype=markdown
 
 " correct comments using svelte
 if !exists('g:context_filetype#same_filetypes')
