@@ -1,13 +1,16 @@
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 export PATH="/usr/local/opt:$PATH"
-# add python v3 to path
-export PATH=${PATH}:/Users/oliviac/Library/Python/3.7/bin
-# add folder containing custom bash scripts to path
 export PATH="$HOME/projects/bash_scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
-export PATH=$(go env GOPATH)/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/nvim-macos/bin:$PATH"
+#
+# pnpm
+export PNPM_HOME="/Users/oliviac/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+export PATH=$PATH:/usr/local/go/bin
 
 # use GNU version of sed
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
@@ -57,8 +60,4 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-# pnpm
-export PNPM_HOME="/Users/oliviac/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-. "$HOME/.cargo/env"
+
