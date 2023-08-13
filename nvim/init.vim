@@ -43,6 +43,7 @@ Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 " Plug 'jxnblk/vim-mdx-js'
+Plug 'mustache/vim-mustache-handlebars'
 
 " go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -68,10 +69,7 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
-
-" for tailwind v3
-" Plug 'yaegassy/coc-tailwindcss',  {'do': 'npm install && npm run build', 'branch': 'feat/support-v3-and-use-server-pkg'}
-Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
+Plug 'elixir-editors/vim-elixir'
 
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
@@ -124,3 +122,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap ,k :m .-2<CR>==
 nnoremap ,j :m .+1<CR>==
+
+" for prisma formatting to work
+" command! -nargs=0 Format :call CocActionAsync('format')
+" autocmd BufWritePost * call CocActionAsync('format')

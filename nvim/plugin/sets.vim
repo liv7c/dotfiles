@@ -53,6 +53,7 @@ endif
 
 " ui
 set background=dark
+" set background=light
 
 " settings for coc
 set updatetime=300

@@ -152,6 +152,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-emmet',
+      \ 'coc-emmet',
       \ 'coc-eslint',
       \ 'coc-docker',
       \ 'coc-pairs',
@@ -165,6 +166,7 @@ let g:coc_global_extensions = [
       \ 'coc-highlight',
       \ 'coc-sh',
       \ 'coc-go',
+      \ 'coc-elixir',
       \ 'coc-prisma',
       \ 'coc-styled-components',
       \ 'coc-rust-analyzer',

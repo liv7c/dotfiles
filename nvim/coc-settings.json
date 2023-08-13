@@ -1,9 +1,12 @@
 {
+  "diagnostic.virtualText": false,
   "diagnostic.enable": false,
+  "diagnostic.messageTarget": "float",
   "signature.preferShownAbove": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "gohtmltmpl": "html"
+    "gohtmltmpl": "html",
+    "html.handlebars": "html"
   },
   "suggest.noselect": false,
   "eslint.autoFixOnSave": true,
@@ -33,5 +36,7 @@
     "vue",
     "svelte"
   ],
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "snippets.ultisnips.pythonPrompt": false,
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
 }
