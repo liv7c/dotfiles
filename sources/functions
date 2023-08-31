@@ -76,3 +76,7 @@ go_cover () {
     t="/tmp/go-cover.$$.tmp"
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
 }
+
+jt() {
+  yarn test --coverage=false --watch=true "$@"
+}
