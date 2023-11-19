@@ -16,8 +16,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# VSCode
+# Editors
 .vscode/
+.idea/
+
 
 # caches
 .eslintcache
