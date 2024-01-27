@@ -50,7 +50,7 @@
   aa = add --all
   s = status -s
   st = status
-  b = branch
+  br = branch
   c = commit --verbose
   ct = commit
   cm = commit -m
