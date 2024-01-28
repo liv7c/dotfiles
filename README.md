@@ -4,17 +4,15 @@ Personal config files for:
 - bash
 - tmux
 - alacritty
-- neovim
 
 ## Structure
 
-* `init` is the script to run to set everything up. It is a shell script that creates a symlink for whatever file you put in the `symlinks` directory.
-If you feel like cloning this and use it as your own, change the `HOMEDIR` and `CURRENTDIR` variables in `init`
-* The `bashrc` sources whatever files are in the `sources` directory (in my case, just some functions and magical aliases).
-* the `nvim` folder contains all my neovim config. `init` contains a special function to symlink all the files inside of that folder.
-* `nvim/plugin` contains the config of the plugins I use (like `coc`, `telescope`) + general vim settings (`sets.vim` and `navigation.vim`)
+> ⚠️ If you want to use this config as your own, update the `HOMEDIR` and `CURRENTDIR` variables in the 'init` file.
 
-## Sources of inspiration / some great dotfiles repos
+* `init` is a small shell script to set everything up. It creates a symlink for all the files in the `symlinks` directory.
+* The `bashrc` sources all the files from the `sources` directory (in my case, just some functions and bash aliases). 
+
+## Some great dotfiles repositories
 
 * https://github.com/ViBiOh/dotfiles
 * https://github.com/garybernhardt/dotfiles
