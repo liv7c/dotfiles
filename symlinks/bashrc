@@ -5,7 +5,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/nvim-macos/bin:$PATH"
-#
+export PATH="/usr/local/opt/mysql/bin:$PATH"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
 # pnpm
 export PNPM_HOME="/Users/oliviac/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
@@ -19,7 +21,14 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 
-export EDITOR='nvim'
+# add python
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 source_config_files() {
   local homedir=/Users/oliviac
@@ -34,6 +43,8 @@ source_config_files() {
 
 source_config_files
 unset -f source_config_files
+
+export EDITOR='nvim'
 
 # for signed commit
 export GPG_TTY=$(tty)
@@ -59,5 +70,16 @@ eval "$(starship init bash)"
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+
+# some global env variables for sql
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+export PKG_CONFIG_PATH="/usr/local/opt/mysql-client/lib/pkgconfig"
+#
+# global variables for bash history
+export HISTSIZE=10000
+export HISTCONTROL=ignoreboth
+. "$HOME/.cargo/env"
 
 
