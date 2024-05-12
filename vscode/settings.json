@@ -41,6 +41,10 @@
       "commands": ["editor.action.showHover"]
     },
     {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
       "before": ["u"],
       "after": [],
       "commands": [
@@ -62,7 +66,7 @@
     }
   ],
   "vim.leader": " ",
-  "vim.hlsearch": true,
+  "vim.hlsearch": false,
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
   "editor.minimap.enabled": false,

@@ -22,5 +22,15 @@
   {
     "key": "ctrl+alt+n",
     "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused",
   }
 ]
