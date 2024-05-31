@@ -71,6 +71,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+# set locale language
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # some global env variables for sql
 export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
