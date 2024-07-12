@@ -1,17 +1,37 @@
 {
-  "workbench.colorTheme": "Night Owl",
-  "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "breadcrumbs.enabled": false,
-  "prettier.requireConfig": true,
+  "editor.fontFamily": "MonoLisa, Dank Mono, \"OperatorMonoLig-Book\", Dank Mono, \"FiraMono Nerd Font Mono\",Menlo,  Monaco, 'Courier New', monospace",
+  "editor.lineHeight": 1.7,
+  "editor.insertSpaces": true,
+  "prettier.requireConfig": false,
+  "prettier.documentSelectors": ["**/*.astro"],
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    }
+  },
+  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
+    "editor.autoIndent": "advanced",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -20,6 +40,10 @@
   "[javascriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
   },
   "vim.visualModeKeyBindings": [
     {
@@ -37,8 +61,16 @@
       "commands": ["editor.action.rename"]
     },
     {
+      "before": ["<leader>", "[", "r"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "]", "r"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
       "before": ["K"],
-      "commands": ["editor.action.showHover"]
+      "commands": ["editor.action.showDefinitionPreviewHover"]
     },
     {
       "before": ["g", "h"],
@@ -68,15 +100,79 @@
   "vim.leader": " ",
   "vim.hlsearch": false,
   "vim.useSystemClipboard": true,
-  "vim.smartRelativeLine": true,
   "editor.minimap.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "telemetry.telemetryLevel": "off",
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
   },
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "nunjucks": "html",
+    "gohtml": "html",
+    "django-html": "html"
   },
-  "workbench.iconTheme": "eq-material-theme-icons-ocean"
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "files.associations": {
+    "*.tmpl": "html",
+    "*.css": "css",
+    "*.svelte": "svelte",
+    "*.gohtml": "html",
+    "*.html": "html"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.tabSize": 2,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.typegen.ts",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts, ${capture}.typegen.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "*.mts": "${capture}.typegen.ts",
+    "*.cts": "${capture}.typegen.ts"
+  },
+  "errorLens.enabledDiagnosticLevels": ["info", "error"],
+  "errorLens.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.wordWrap": "on",
+  "vim.smartRelativeLine": true,
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "explorer.compactFolders": false,
+  "workbench.editor.labelFormat": "short",
+  "explorer.confirmDragAndDrop": false,
+  "editor.guides.indentation": false,
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.fontLigatures": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.languageServer": "Pylance",
+  "window.customTitleBarVisibility": "never",
+  "breadcrumbs.enabled": false,
+  "debug.allowBreakpointsEverywhere": true,
+  "rust-analyzer.check.command": "clippy",
+  "terminal.integrated.tabs.enabled": false,
+  "indentRainbow.includedLanguages": ["python"],
+  "editor.fontSize": 13,
+  "rust-analyzer.testExplorer": true,
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": true
 }
