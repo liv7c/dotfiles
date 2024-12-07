@@ -10,17 +10,6 @@ alias less="less -R"
 alias npms="npm run start"
 alias npmd="npm run dev"
 alias npmt="npm test"
-alias npmtw="npm run test:watch"
-alias npmb="npm run build"
-
-# yarn related
-alias ys="yarn start"
-alias yd="yarn dev"
-alias yt="yarn test"
-
-# pnpm related
-alias pn="pnpm"
-alias pns="pnpm start"
 
 # rust related
 alias ca="cargo"
@@ -38,7 +27,6 @@ alias tmns="tmux new-session -s misc -d"
 
 # each keystroke counts...
 alias nv="nvim"
-alias e="nvim"
 
 # vscode
 alias vsc="code ."
@@ -51,12 +39,10 @@ alias gri='git rebase -i `fcs`'
 # commonly used directories
 alias d="cd ~/Documents"
 alias dt="cd ~/Desktop"
-alias doc="cd ~/Documents/docs"
-alias dot="cd ~/projects/dotfiles"
+alias dot="cd ~/dotfiles"
 alias co="cd ~/courses"
 alias p="cd ~/projects"
 alias nconfig="cd ~/nvim-config"
-alias sb="cd ~/projects/swayandbreathe"
 
 # bat - better cat with colored output and other goodies
 alias bat="bat --style='numbers,changes' --theme='TwoDark'"
@@ -65,5 +51,3 @@ alias bat="bat --style='numbers,changes' --theme='TwoDark'"
 alias ls="ls -G"
 alias ll="ls -lahG"
 
-# alias for k8s
-alias k="kubectl"

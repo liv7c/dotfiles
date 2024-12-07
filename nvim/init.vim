@@ -70,7 +70,6 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
-Plug 'elixir-editors/vim-elixir'
 
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 

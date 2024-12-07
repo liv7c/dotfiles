@@ -1,7 +1,7 @@
 [user]
   name = Olivia Coumans
   email = livie7c@gmail.com
-  signingkey = FB585ECEFCEF8B8DCB0F008A27A3F02A7F8968A3
+  signingkey = 9092314D2886A248
 
 [core]
   editor = nvim

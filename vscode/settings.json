@@ -172,7 +172,5 @@
   "terminal.integrated.tabs.enabled": false,
   "indentRainbow.includedLanguages": ["python"],
   "editor.fontSize": 13,
-  "rust-analyzer.testExplorer": true,
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": true
+  "rust-analyzer.testExplorer": true
 }
