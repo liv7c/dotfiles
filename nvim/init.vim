@@ -70,6 +70,8 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'rose-pine/neovim', { 'as': 'rose-pine' }
 
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 

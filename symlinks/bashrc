@@ -3,6 +3,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="~/projects/little-bash-scripts:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 source_config_files() {
   local homedir=/Users/oliviac
