@@ -5,6 +5,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
+
 source_config_files() {
   local homedir=/Users/oliviac
   local dotfilesdir="${homedir}/dotfiles"
@@ -22,6 +23,7 @@ unset -f source_config_files
 
 # for signed commit
 export GPG_TTY=$(tty)
+
 
 # remove warning when first log into shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -42,7 +44,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-eval "$(fzf --bash)"
+eval "$(fzf --bash)" >/dev/null 2>&1
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
