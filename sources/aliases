@@ -51,3 +51,9 @@ alias bat="bat --style='numbers,changes' --theme='TwoDark'"
 alias ls="ls -G"
 alias ll="ls -lahG"
 
+# laravel
+alias pa="php artisan"
+alias tinker="php artisan tinker"
+
+# pnpm
+alias pn='pnpm'
