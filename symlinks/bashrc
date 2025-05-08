@@ -5,7 +5,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
-
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 source_config_files() {
   local homedir=/Users/oliviac
@@ -52,3 +52,6 @@ eval "$(starship init bash)"
 
 # Created by `pipx` on 2024-12-06 15:13:36
 export PATH="$PATH:/Users/oliviac/.local/bin"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
