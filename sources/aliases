@@ -40,8 +40,7 @@ alias gri='git rebase -i `fcs`'
 alias d="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias dot="cd ~/dotfiles"
-alias co="cd ~/courses"
-alias p="cd ~/projects"
+alias repos="cd ~/repos"
 alias nconfig="cd ~/nvim-config"
 
 # bat - better cat with colored output and other goodies
