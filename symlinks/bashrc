@@ -8,7 +8,7 @@ export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 source_config_files() {
-  local homedir=/Users/oliviac
+  local homedir=/Users/oliviacoumans
   local dotfilesdir="${homedir}/dotfiles"
 
   shopt -s nullglob
@@ -51,7 +51,7 @@ eval "$(starship init bash)"
 . "$HOME/.cargo/env"
 
 # Created by `pipx` on 2024-12-06 15:13:36
-export PATH="$PATH:/Users/oliviac/.local/bin"
+export PATH="$PATH:/Users/oliviacoumans/.local/bin"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

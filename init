@@ -3,7 +3,7 @@
 # Usage: ./init
 
 CURRENTDIR="$(pwd)"
-HOMEDIR=/Users/oliviac
+HOMEDIR=/Users/oliviacoumans
 
 echo "Changing to the ${CURRENTDIR} directory"
 cd "${CURRENTDIR}" || exit
