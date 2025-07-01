@@ -52,8 +52,8 @@ background = "#151515"
 foreground = "#d0d0d0"
 
 [font]
-normal = { family = "FiraMono Nerd Font" }
-size = 13
+normal = { family = "MonoLisa" }
+size = 12
 
 [terminal.shell]
 args = ["--login"]

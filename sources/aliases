@@ -56,3 +56,6 @@ alias tinker="php artisan tinker"
 
 # pnpm
 alias pn='pnpm'
+
+# local-env tool
+alias le="local-env"
