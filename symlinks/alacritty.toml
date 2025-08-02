@@ -1,69 +1,108 @@
-[[keyboard.bindings]]
-chars = "\u001B[1;5A"
-key = "Up"
-mods = "Alt"
+[[colors.indexed_colors]]
+color = "#fe8019"
+index = 16
 
-[[keyboard.bindings]]
-chars = "\u001B[1;5B"
-key = "Down"
-mods = "Alt"
+[[colors.indexed_colors]]
+color = "#d65d0e"
+index = 17
 
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
+[[colors.indexed_colors]]
+color = "#3c3836"
+index = 18
 
-[[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
+[[colors.indexed_colors]]
+color = "#504945"
+index = 19
 
-[terminal]
+[[colors.indexed_colors]]
+color = "#bdae93"
+index = 20
 
-[colors]
-draw_bold_text_with_bright_colors = true
+[[colors.indexed_colors]]
+color = "#ebdbb2"
+index = 21
 
 [colors.bright]
-black = "#505050"
-blue = "#6fc2ef"
-cyan = "#12cfc0"
-green = "#acc267"
-magenta = "#e1a3ee"
-red = "#fb9fb1"
-white = "#f5f5f5"
-yellow = "#ddb26f"
+black = "0x665c54"
+blue = "0xbdae93"
+cyan = "0xd65d0e"
+green = "0x3c3836"
+magenta = "0xebdbb2"
+red = "0xfe8019"
+white = "0xfbf1c7"
+yellow = "0x504945"
 
 [colors.cursor]
-cursor = "#d0d0d0"
-text = "#151515"
+cursor = "0xd5c4a1"
+text = "0x1d2021"
 
 [colors.normal]
-black = "#151515"
-blue = "#6fc2ef"
-cyan = "#12cfc0"
-green = "#acc267"
-magenta = "#e1a3ee"
-red = "#fb9fb1"
-white = "#d0d0d0"
-yellow = "#ddb26f"
+black = "0x1d2021"
+blue = "0x83a598"
+cyan = "0x8ec07c"
+green = "0xb8bb26"
+magenta = "0xd3869b"
+red = "0xfb4934"
+white = "0xd5c4a1"
+yellow = "0xfabd2f"
 
 [colors.primary]
-background = "#151515"
-foreground = "#d0d0d0"
+background = "0x1d2021"
+foreground = "0xd5c4a1"
 
 [font]
-normal = { family = "MonoLisa NF" }
-size = 12.5
+size = 13.0
 
-[terminal.shell]
-args = ["--login"]
-program = "/bin/bash"
+[font.normal]
+family = "Noto Sans M Nerds"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Alt"
+
+# Strip Alt from Hyprland binds
+# https://github.com/alacritty/alacritty/pull/7857#issuecomment-2571278705
+[[keyboard.bindings]]
+chars = "—"
+key = "—"
+mods = "Alt"
+[[keyboard.bindings]]
+chars = "—"
+key = "—"
+mods = "Shift | Alt"
+[[keyboard.bindings]]
+chars = "æ"
+key = "æ"
+mods = "Alt"
+[[keyboard.bindings]]
+chars = "Æ"
+key = "æ"
+mods = "Shift | Alt"
+[[keyboard.bindings]]
+chars = "ø"
+key = "ø"
+mods = "Alt"
+[[keyboard.bindings]]
+chars = "Ø"
+key = "ø"
+mods = "Shift | Alt"
+[[keyboard.bindings]]
+chars = "å"
+key = "å"
+mods = "Alt"
+[[keyboard.bindings]]
+chars = "Å"
+key = "å"
+mods = "Shift | Alt"
+
+[scrolling]
+history = 0
 
 [window]
-startup_mode = "Maximized"
-
-[window.padding]
-x = 5
-y = 2
-
-[keyboard]
+decorations = "none"
