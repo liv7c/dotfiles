@@ -10,66 +10,53 @@ grep() {
   command grep --color=auto "$@"
 }
 
-# to find git commit sha (very useful when using git rebase -i)
-fcs() {
-  local commits commit
-  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
-  commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
-  echo -n $(echo "$commit" | sed "s/ .*//")
-}
-
-# to switch branch quickly with fzf
-# source: https://revelry.co/resources/development/terminal-workflow-fzf/
-gsb() {
-  result=$(git branch -a --color=always | grep -v '/HEAD\s' | sort |
-    fzf --height 50% --border --ansi --tac --preview-window right:70% \
-      --preview 'git log --oneline --graph --date=short --pretty="format:%C(auto)%cd %h%d %s" $(sed s/^..// <<< {} | cut -d" " -f1) | head -'$LINES |
-    sed 's/^..//' | cut -d' ' -f1)
-
-  if [[ $result != "" ]]; then
-    if [[ $result == remotes/* ]]; then
-      git switch --track $(echo $result | sed 's#remotes/##')
-    else
-      git switch "$result"
-    fi
+# fzf git helpers
+# use fzf to find delete git branch
+function dfb() {
+  local line branch
+	line=$(git --no-pager branch -vv | fzf)
+	branch=$(echo "$line" | sed -E 's/^[* ]+([^ ]+).*/\1/')
+	
+  echo "git branch -D $branch"
+  read -p "Are you sure you want to delete this branch? [y|n] " -n 1
+  echo ""
+  
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+	  git branch -D "$branch"
+  else
+	  echo "Branch deletion aborted"
   fi
 }
 
-# fzf git helpers
-# use fzf to find delete git branch
-dfb() {
-	local branches branch
-	branches=$(git --no-pager branch -vv) &&
-  	branch=$(echo "$branches" | fzf +m)
-	echo -e git branch -D $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-	read -p "Are you sure you want to delete this branch? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		git branch -D $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-	fi;
-}
-
 # use fzf to checkout to git branch using fuzzy finder
-function cfb() {
-  local branches branch
-  branches=$(git --no-pager branch -vv) &&
-  branch=$(echo "$branches" | fzf +m) &&
-  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+function sfg() {
+	local line branch
+	line=$(git --no-pager branch -vv | fzf)
+	branch=$(echo "$line" | sed -E 's/^[* ]+([^ ]+).*/\1/')
+	git switch "$branch"
 }
-
 # use fzf to find a directory
 function fd() {
   DIR=`find * -maxdepth 0 -type d -print 2> /dev/null | fzf-tmux` \
     && cd "$DIR"
 }
 
-# to find git commit sha (very useful when using git rebase -i)
-fcs() {
-  local commits commit
-  commits=$(git log --color=always --pretty=oneline --abbrev-commit --reverse) &&
-  commit=$(echo "$commits" | fzf --tac +s +m -e --ansi --reverse) &&
-  echo -n $(echo "$commit" | sed "s/ .*//")
+# use fzf to rebase your branch onto a specific commit
+function gri() {
+  local line commit
+  line=$(git log --color=always --pretty=oneline --abbrev-commit | fzf --ansi --reverse)
+
+  # exit the function if no commit is selected
+  if [[ -z "$line" ]]; then
+    return
+  fi
+
+  commit=$(echo "$line" | sed -E "s/^([^ ]+).*/\1/")
+
+  git rebase -i "$commit"
 }
+
+# to find git commit sha (very useful when using git rebase -i)
 
 # get test coverage report for go applications
 go_cover () { 
