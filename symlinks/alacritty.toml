@@ -80,7 +80,6 @@ mods = "Alt"
 history = 0
 
 [window]
-decorations = "none"
 startup_mode = "Maximized"
 
 [window.padding]
