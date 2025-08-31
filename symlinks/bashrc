@@ -21,10 +21,8 @@ source_config_files() {
 source_config_files
 unset -f source_config_files
 
-
 # for signed commit
 export GPG_TTY=$(tty)
-
 
 # remove warning when first log into shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -42,10 +40,12 @@ export HISTCONTROL=ignoreboth
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
+# go related
+export GOPLSTELEMETRY=off
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-eval "$(fzf --bash)" >/dev/null 2>&1
+eval "$(fzf --bash)" > /dev/null 2>&1
 
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
